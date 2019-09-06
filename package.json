@@ -1,0 +1,26 @@
+{
+  "name": "jj-boilerplate",
+  "version": "1.0.0",
+  "description": "Simples boilerplate para uma aplicação front-end moderna.",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --colors --progress --mode=development",
+    "build:production": "./node_modules/.bin/webpack --colors --progress --mode=production",
+    "watch": "npm run build -- --watch"
+  },
+  "author": "José Junior",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/runtime": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4"
+  }
+}
